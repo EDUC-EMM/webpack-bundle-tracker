@@ -66,7 +66,8 @@ Plugin.prototype.apply = function(compiler) {
       });
       var output = {
         status: 'done',
-        chunks: chunks
+        chunks: chunks,
+        messages: stats.compilation.bundleHasMessages
       };
 
       if (self.options.logTime === true) {
